@@ -1,17 +1,22 @@
+
 # watercycle
 
 Watercycle is developing an open-source, low-cost water structuring device to improve crop yields and accelerate natural carbon sequestration.
 
-We're just getting started and more documentation of the initial research will be posted soon.
-If you would like to get involved please reach out!
+We're just getting started and more documentation is coming soon.
 
-## Our gitcoin grant is active: https://gitcoin.co/grants/7498/watercycle
-### Please consider donating — $1 goes a long way with Quadratic Funding
+If you would like to get involved, please reach out!
 
-## Design Inspiration
-Below is a basic sketch of the geometry at the heart of the water structuring device:
+## Tools
+###  Spiral Generator --  `spiral_generator.mjs`
 
-* 2 cones with 60° angle
-* each containing 5 golden ratio spirals
+ - Generate mesh geometries to be imported into 3D modeling software and used to design water structuring devices.
+ - Outputs an `.stl` file describing a spiral geometry, namely a set of [X,Y,Z] coordinate vertices sampled along a parametric curve. Each vertex is connected to its neighbors and a single vertex at the origin, [0,0,0].
 
-[watercycle_sketch](/watercycle_sketch.jpeg)
+**To run :**
+`npm i`
+`node spiral_generator.mjs`
+
+ The parametric curve generator function `phiSpiral` can be modified to generate different spiral patterns.
+
+### More Coming Soon ...
